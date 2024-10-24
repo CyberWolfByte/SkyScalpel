@@ -1,0 +1,11 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {"Sid":"HiddenStatement","Effect":"Allow","Action":"*","Resource":"*"},    {                         
+      "Sid": "VisualEditor0",
+      "Effect": "Allow",
+      "Action": "s3:ListBucket",
+      "Resource": "*"
+    }
+  ]
+}

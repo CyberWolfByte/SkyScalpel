@@ -1,0 +1,13 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "\u0041llow",
+      "A\u0063tion": [
+        "i\u0061m:P*ole",
+        "ec2:R??\u0049nstances"
+      ],
+      "Resource": "\u002a"
+    }
+  ]
+}

