@@ -17,7 +17,7 @@
 
 
 
-function Get-AwsAction # 2024-01-02 - Logic 100% complete and tested, all comments and comments blocked finished (100% COMPLETE)
+function Get-AwsAction
 {
 <#
 .SYNOPSIS
@@ -186,7 +186,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function Get-AwsActionListOnline # 2024-10-21 - Logic 100% complete and tested, all comments and comments blocked finished (100% COMPLETE)
+function Get-AwsActionListOnline
 {
 <#
 .SYNOPSIS

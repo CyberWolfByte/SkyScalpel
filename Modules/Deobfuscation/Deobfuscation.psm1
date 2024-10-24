@@ -17,7 +17,7 @@
 
 
 
-function Remove-RandomUnicode # 2024-01-11 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST 100%
+function Remove-RandomUnicode
 {
 <#
 .SYNOPSIS
@@ -377,7 +377,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function Remove-RandomWhitespace # 2024-01-11 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST 100%
+function Remove-RandomWhitespace
 {
 <#
 .SYNOPSIS
@@ -693,7 +693,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function Remove-RandomWildcard # 2024-09-29 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST 100%
+function Remove-RandomWildcard
 {
 <#
 .SYNOPSIS
@@ -1000,7 +1000,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function Remove-RandomWildcardSingleChar # 2024-09-29 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST 100%
+function Remove-RandomWildcardSingleChar
 {
 <#
 .SYNOPSIS

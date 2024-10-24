@@ -17,7 +17,7 @@
 
 
 
-function Confirm-FilterEligibility # 2024-09-29 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST 100%
+function Confirm-FilterEligibility
 {
 <#
 .SYNOPSIS

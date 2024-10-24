@@ -17,7 +17,7 @@
 
 
 
-function ConvertTo-RandomCase # 2024-01-18 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST 100%
+function ConvertTo-RandomCase
 {
 <#
 .SYNOPSIS
@@ -182,7 +182,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function ConvertTo-RandomUnicode # 2024-01-03 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST 100%
+function ConvertTo-RandomUnicode
 {
 <#
 .SYNOPSIS
@@ -348,7 +348,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function ConvertTo-RandomWildcard # 2024-01-22 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST 100%
+function ConvertTo-RandomWildcard
 {
 <#
 .SYNOPSIS
@@ -552,7 +552,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function ConvertTo-RandomWildcardSingleChar # 2024-09-29 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST 100%
+function ConvertTo-RandomWildcardSingleChar
 {
 <#
 .SYNOPSIS

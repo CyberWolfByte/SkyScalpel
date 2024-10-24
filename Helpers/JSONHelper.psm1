@@ -17,7 +17,7 @@
 
 
 
-function ConvertTo-JsonParsedValue # 2024-01-03 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST NOT COMPLETED
+function ConvertTo-JsonParsedValue
 {
 <#
 .SYNOPSIS
@@ -112,7 +112,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function New-JsonToken # 2024-01-17 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST 100%
+function New-JsonToken
 {
 <#
 .SYNOPSIS
@@ -310,7 +310,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function Join-JsonObject # 2024-01-15 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST 100%
+function Join-JsonObject
 {
 <#
 .SYNOPSIS
@@ -423,7 +423,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function Expand-JsonObject # 2024-01-15 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST 100%
+function Expand-JsonObject
 {
 <#
 .SYNOPSIS
@@ -529,7 +529,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function ConvertTo-JsonObject # 2024-01-15 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST 100% _____ 2024-01-15 DBO: remove $global:thisErrorStuff try/catch block after finalizing error handling in CSharp parser for invalid JSON
+function ConvertTo-JsonObject
 {
 <#
 .SYNOPSIS
@@ -681,7 +681,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function Format-JsonObject # 2024-01-17 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST 100%
+function Format-JsonObject
 {
 <#
 .SYNOPSIS
@@ -1001,7 +1001,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function Out-JsonObject # 2024-10-23 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST 100%
+function Out-JsonObject
 {
 <#
 .SYNOPSIS
@@ -1213,10 +1213,10 @@ https://twitter.com/danielhbohannon/
                 continue
             }
 
-            # Normalize potential carriage return characters ('\r') in Whitespace JsonTokens if user input Format parameter is 'tree'.
+            # Normalize potential carriage return ('\r') and newline ('\n') characters in Whitespace JsonTokens if user input Format parameter is 'tree'.
             if ($Format -eq 'tree' -and $curToken.Type -eq [SkyScalpel.JsonTokenType]::Whitespace)
             {
-                $curToken.Content = $curToken.Content -creplace '\r',' '
+                $curToken.Content = $curToken.Content -creplace '[\r\n]',' '
             }
 
             # Output potential newline with current indentation before outputting current JsonToken

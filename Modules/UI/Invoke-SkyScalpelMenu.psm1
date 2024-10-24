@@ -29,7 +29,7 @@
 # Get location of this script no matter what the current directory is for the process executing this script.
 $scriptDir = [System.IO.Path]::GetDirectoryName($myInvocation.MyCommand.Definition) 
 
-function Invoke-SkyScalpel # TODO - just uncomment new obfuscation/deobfuscation function tables after adding/removing them -- look for comments: # 2024-10-22 TODO
+function Invoke-SkyScalpel
 {
 <#
 .SYNOPSIS
@@ -340,7 +340,6 @@ https://twitter.com/danielhbohannon/
 
     # Main\Obfuscate\AWSPolicy Menu.
     $menuLevel_Obfuscate_AWSPolicy = @(
-        [PSCustomObject] @{ LineHeader = $lineHeader; Option = 'CASE              '; Description = 'Randomly substitute <Case> of eligible tokens'                               }
         [PSCustomObject] @{ LineHeader = $lineHeader; Option = 'WILDCARD          '; Description = 'Randomly insert <Wildcard> characters into eligible tokens'                  }
         [PSCustomObject] @{ LineHeader = $lineHeader; Option = 'WILDCARDSINGLECHAR'; Description = 'Randomly insert <Single-Character Wildcard> characters into eligible tokens' }
     )
@@ -519,7 +518,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function Show-Menu # 2024-10-22 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST 100%
+function Show-Menu
 {
 <#
 .SYNOPSIS
@@ -1721,7 +1720,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function Show-OptionsMenu # 2024-10-22 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST 100%
+function Show-OptionsMenu
 {
 <#
 .SYNOPSIS
@@ -2176,7 +2175,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function Show-HelpMenu # 2024-10-23 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST NOT COMPLETED
+function Show-HelpMenu
 {
 <#
 .SYNOPSIS
@@ -2274,7 +2273,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function Show-Tutorial # 2024-10-23 TODO - REMOVE COMMENTED CODE and decide if leaving DETECT/FIND-EVIL command
+function Show-Tutorial
 {
 <#
 .SYNOPSIS
@@ -2388,7 +2387,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function Split-Command # 2024-10-23 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST NOT COMPLETED
+function Split-Command
 {
 <#
 .SYNOPSIS
@@ -2516,7 +2515,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function Show-AsciiArt # 2024-10-23 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST NOT COMPLETED
+function Show-AsciiArt
 {
 <#
 .SYNOPSIS
@@ -2718,8 +2717,8 @@ a8P"Y88888P" P""Y8888PPP"Y8888P"`Y8P'"Y88PI8 YY88888P888P"Y8888P'"Y88
         $policy = '{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Action":["iam:PassRole","ec2:RunInstances"],"Resource":"*"}]}'
         $policyObfLayer1 = $policy | Add-RandomWildcard -RandomNodePercent 100 -RandomCharPercent 40 -RandomLength 1 -Format Plaintext -Type Replace -TrackModification -Target JsonToken
         $policyObfLayer2 = $policyObfLayer1 | Add-RandomWildcardSingleChar -RandomNodePercent 100 -RandomCharPercent 40 -Format Plaintext -TrackModification -Target JsonToken
-        $policyObfLayer3 = $policyObfLayer2 | Add-RandomUnicode -RandomNodePercent 100 -RandomCharPercent 20 -TrackModification -Target JsonToken
-        $policyObfLayer4 = $policyObfLayer3 | Add-RandomWhitespace -RandomNodePercent 100 -RandomLength @(3..10) -TrackModification -Target JsonToken
+        $policyObfLayer3 = $policyObfLayer2 | Add-RandomUnicode -RandomNodePercent 100 -RandomCharPercent 40 -TrackModification -Target JsonToken
+        $policyObfLayer4 = $policyObfLayer3 | Add-RandomWhitespace -RandomNodePercent 100 -RandomLength @(3..15) -TrackModification -Target JsonToken
 
         $policy | Out-JsonObject
         Start-Sleep -Milliseconds 650
@@ -2800,7 +2799,7 @@ a8P"Y88888P" P""Y8888PPP"Y8888P"`Y8P'"Y88PI8 YY88888P888P"Y8888P'"Y88
 }
 
 
-function New-ObfuscationContainer # 2024-10-22 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST NOT COMPLETED
+function New-ObfuscationContainer
 {
 <#
 .SYNOPSIS
@@ -3013,7 +3012,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function Add-ObfuscationLayer # 2024-10-22 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST NOT COMPLETED
+function Add-ObfuscationLayer
 {
 <#
 .SYNOPSIS
@@ -3202,7 +3201,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function Remove-ObfuscationLayer # 2024-10-22 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST NOT COMPLETED
+function Remove-ObfuscationLayer
 {
 <#
 .SYNOPSIS
@@ -3301,7 +3300,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function Get-FunctionInfo # 2024-10-22 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST NOT COMPLETED
+function Get-FunctionInfo
 {
 <#
 .SYNOPSIS

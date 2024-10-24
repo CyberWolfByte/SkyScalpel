@@ -17,7 +17,7 @@
 
 
 
-function ConvertFrom-RandomUnicode # 2024-01-11 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST 100%
+function ConvertFrom-RandomUnicode
 {
 <#
 .SYNOPSIS
@@ -157,7 +157,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function ConvertFrom-RandomWildcard # 2024-02-01 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST 100%
+function ConvertFrom-RandomWildcard
 {
 <#
 .SYNOPSIS
@@ -537,7 +537,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function ConvertFrom-RandomWildcardSingleChar # 2024-09-29 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST 100%
+function ConvertFrom-RandomWildcardSingleChar
 {
 <#
 .SYNOPSIS
@@ -694,7 +694,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function Out-LongestCommonPrefix # 2024-01-23 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST 100%
+function Out-LongestCommonPrefix
 {
 <#
 .SYNOPSIS
@@ -838,7 +838,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function Out-LongestCommonSubstring # 2024-01-30 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST 100%
+function Out-LongestCommonSubstring
 {
 <#
 .SYNOPSIS
@@ -985,7 +985,7 @@ https://twitter.com/danielhbohannon/
 }
 
 
-function Out-LongestCommonSuffix # 2024-01-23 COMPLETED 100% AND TESTED, COMMENTED, UNIT TEST 100%
+function Out-LongestCommonSuffix
 {
 <#
 .SYNOPSIS
