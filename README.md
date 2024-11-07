@@ -1,10 +1,14 @@
-﻿![SkyScalpel](Images/SkyScalpel_Screenshot_ASCII_Art.png "SkyScalpel Logo")
+﻿![SkyScalpel](Images/SkyScalpel_Banner.png "SkyScalpel Logo")
 
 # SkyScalpel
 
-**Released At:** <a href="https://www.blackhat.com/sector/2024/briefings/schedule/index.html#skyscalpel-making--breaking-policy-obfuscation-in-the-cloud-41117">Black Hat SecTor 2024</a> (2024-10-24) 
+**Permiso:** [https://permiso.io](https://permiso.io/)
 
-**Authors:** <a href="https://twitter.com/danielhbohannon">Daniel Bohannon (DBO)</a> & <a href="https://www.linkedin.com/in/abian-morina/">Abian Morina (Abi)</a> 
+**Read our release blog:** https://permiso.io/blog/introducing-sky-scalpel-open-source-tool
+
+**Released At:** <a href="https://www.blackhat.com/sector/2024/briefings/schedule/index.html#skyscalpel-making--breaking-policy-obfuscation-in-the-cloud-41117">Black Hat SecTor 2024</a> (2024-10-24)
+
+**Authors:** <a href="https://twitter.com/danielhbohannon">Daniel Bohannon (DBO)</a> & <a href="https://www.linkedin.com/in/abian-morina/">Abian Morina (Abi)</a>
 
 ## Introduction
 
